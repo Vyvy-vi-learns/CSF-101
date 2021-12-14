@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 // Struct for representing a complex number
 typedef struct
@@ -106,8 +107,8 @@ char get_user_choice() {
 // Utility function to return a random complex number
 complex random_complex_number() {
     complex num;
-    num.real = 0;
-    num.imaginary = 0;
+    num.real = rand() / 100000;
+    num.imaginary = rand() /100000;
     return num;
 }
 
@@ -274,6 +275,6 @@ int main(void)
         input = get_user_choice();
     }
 
-    printf("Exiting...\nThanks for using.\n");
+    printf("Exiting...\nThanks for using!\n");
     printf("----------------------------------------\n");
 }
