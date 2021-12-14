@@ -25,9 +25,7 @@ int read = 0;
  ****************************************************
  */
 
- /**
- * Function for (a) Reading a complex number
- */
+ // Function for (a) Reading a complex number
  complex read_complex_number() {
      complex num;
 
@@ -39,9 +37,7 @@ int read = 0;
      return num;
  }
 
- /**
- * Function for (b) Writing a complex number
- */
+ // Function for (b) Writing a complex number
  void write_complex_number(complex num) {
      if (num.imaginary < 0) {
          printf("%d - %di\n", num.real, - num.imaginary);
@@ -54,9 +50,7 @@ int read = 0;
      }
  }
 
- /**
- * Function for (c) Addition of two complex numbers
- */
+ // Function for (c) Addition of two complex numbers
  complex add_complex_numbers(complex num1, complex num2) {
      complex sum = {
        .real = num1.real + num2.real,
@@ -65,9 +59,7 @@ int read = 0;
      return sum;
  }
 
- /**
- * Function for (d) Subtraction of two complex numbers
- */
+ // Function for (d) Subtraction of two complex numbers
  complex subtract_complex_numbers(complex num1, complex num2) {
      complex diff = {
        .real = num1.real - num2.real,
@@ -93,9 +85,7 @@ int read = 0;
  ****************************************************
  */
 
-/**
- * Utility function to get user choice for menu
- */
+// Utility function to get user choice for menu
 char get_user_choice() {
     char choice;
     printf("Select which action you would like to perform.");
@@ -113,9 +103,7 @@ char get_user_choice() {
 }
 
 
-/**
- * Utility function to return a random complex number
- */
+// Utility function to return a random complex number
 complex random_complex_number() {
     complex num;
     num.real = 0;
@@ -125,7 +113,7 @@ complex random_complex_number() {
 
 
 /**
- * Utility function to perform menu action for option 'a':
+ * Function to perform menu action for option 'a':
  * Reading a complex number and storing it
  */
 void option_a()
@@ -136,7 +124,7 @@ void option_a()
 }
 
 /**
- * Utility function to perform menu action for option 'b':
+ * Function to perform menu action for option 'b':
  * Write the Complex Number read previously to STDOUT
  * If a number wasn't read, prompt user to enter one
  * Or print a randomly generated complex number
@@ -176,7 +164,7 @@ void option_b()
 }
 
 /**
- * Utility function to perform menu action for option 'c':
+ * Function to perform menu action for option 'c':
  * Taking input for two complex numbers and Adding them.
  */
 void option_c()
@@ -197,7 +185,7 @@ void option_c()
 }
 
 /**
- * Utility function to perform menu action for option 'c':
+ * Function to perform menu action for option 'c':
  * Taking input for two complex numbers and Subtracting one from other.
  */
 void option_d()
@@ -218,7 +206,7 @@ void option_d()
 }
 
 /**
- * Utility function to perform menu action for option 'c':
+ * Function to perform menu action for option 'c':
  * Taking input for two complex numbers and Multiplying them.
  */
 void option_e()
