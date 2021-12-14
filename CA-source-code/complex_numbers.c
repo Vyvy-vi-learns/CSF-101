@@ -186,7 +186,7 @@ void option_c()
 }
 
 /**
- * Function to perform menu action for option 'c':
+ * Function to perform menu action for option 'd':
  * Taking input for two complex numbers and Subtracting one from other.
  */
 void option_d()
@@ -207,7 +207,7 @@ void option_d()
 }
 
 /**
- * Function to perform menu action for option 'c':
+ * Function to perform menu action for option 'e':
  * Taking input for two complex numbers and Multiplying them.
  */
 void option_e()
